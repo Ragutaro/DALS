@@ -1,0 +1,44 @@
+object frmInfo: TfrmInfo
+  Left = 326
+  Top = 442
+  BorderStyle = bsDialog
+  Caption = #30058#32068#12364#22987#12414#12426#12414#12377'!'
+  ClientHeight = 129
+  ClientWidth = 603
+  Color = clBtnFace
+  Font.Charset = SHIFTJIS_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = #12513#12452#12522#12458
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 18
+  object btnOK: TButton
+    Left = 262
+    Top = 94
+    Width = 75
+    Height = 25
+    Caption = 'OK'
+    Default = True
+    TabOrder = 0
+    OnClick = btnOKClick
+  end
+  object staInfo: TStaticText
+    Left = 6
+    Top = 6
+    Width = 589
+    Height = 79
+    AutoSize = False
+    BevelKind = bkSoft
+    Caption = 'staInfo'
+    Color = clWindow
+    ParentColor = False
+    TabOrder = 1
+    Transparent = False
+  end
+end
