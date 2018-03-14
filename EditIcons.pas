@@ -55,6 +55,8 @@ type
     procedure lvwListMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
     procedure cmbEditLevelChange(Sender: TObject);
+    procedure lvwListClick(Sender: TObject);
+    procedure timLvwScrollTimer(Sender: TObject);
   private
     { Private 宣言 }
     procedure _LoadSettings;
@@ -104,7 +106,6 @@ begin
   begin
     item.SubItems[1] := IntToStr(cmbEditLevel.ItemIndex);
     cmbEditLevel.Visible := False;
-    lvwList.Enabled := True;
   end;
 end;
 
@@ -164,6 +165,11 @@ begin
   end;
 end;
 
+procedure TfrmEditIcons.lvwListClick(Sender: TObject);
+begin
+  cmbEditLevel.Visible := False;
+end;
+
 procedure TfrmEditIcons.lvwListColumnClick(Sender: TObject;
   Column: TListColumn);
 begin
@@ -197,13 +203,8 @@ begin
       cmbEditLevel.Width := lvwList.Column[2].Width+1;
       cmbEditLevel.ItemIndex := StrToInt(item.SubItems[1]);
       cmbEditLevel.Visible := True;
-      lvwList.Enabled := False;
+//      lvwList.Enabled := False;
       cmbEditLevel.DroppedDown := True;
-    end
-    else
-    begin
-      cmbEditLevel.Visible := False;
-      lvwList.Enabled := True;
     end;
   end;
 end;
@@ -244,6 +245,11 @@ begin
     end;
   end;
   _LoadIconsToListView;
+end;
+
+procedure TfrmEditIcons.timLvwScrollTimer(Sender: TObject);
+begin
+  cmbEditLevel.Top := lvwList.Selected.Top;
 end;
 
 procedure TfrmEditIcons._LoadIconsFromIndex;
@@ -392,5 +398,7 @@ begin
     ini.Free;
   end;
 end;
+
+{ TListView }
 
 end.

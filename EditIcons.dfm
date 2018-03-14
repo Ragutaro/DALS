@@ -1,6 +1,6 @@
 object frmEditIcons: TfrmEditIcons
-  Left = 313
-  Top = 211
+  Left = 333
+  Top = 209
   BorderIcons = [biSystemMenu]
   Caption = #12450#12452#12467#12531#12398#35373#23450#65381#32232#38598
   ClientHeight = 264
@@ -25,7 +25,7 @@ object frmEditIcons: TfrmEditIcons
     Top = 0
     Width = 678
     Height = 264
-    ActivePage = tabNew
+    ActivePage = tabEdit
     Align = alClient
     TabOrder = 0
     ExplicitWidth = 382
@@ -71,6 +71,7 @@ object frmEditIcons: TfrmEditIcons
         SmallImages = frmMain.pngTreeView
         TabOrder = 0
         ViewStyle = vsReport
+        OnClick = lvwListClick
         OnColumnClick = lvwListColumnClick
         OnCustomDrawItem = lvwListCustomDrawItem
         OnMouseDown = lvwListMouseDown

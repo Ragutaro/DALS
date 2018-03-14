@@ -108,9 +108,9 @@
         <DCC_Define>FullDebugMode;EnableMemoryLeakReporting;LogMemoryLeakDetailToFile;ClearLogFileOnStartup;$(DCC_Define)</DCC_Define>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1041</VerInfo_Locale>
-        <VerInfo_Build>226</VerInfo_Build>
+        <VerInfo_Build>235</VerInfo_Build>
         <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
-        <VerInfo_Keys>CompanyName=HIDE and Seek!;FileDescription=DAZN Live Schedule;FileVersion=1.0.0.226;InternalName=;LegalCopyright=ラグ太郎;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=HIDE and Seek!;FileDescription=DAZN Live Schedule;FileVersion=1.0.0.235;InternalName=;LegalCopyright=ラグ太郎;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppEnableHighDPI>true</AppEnableHighDPI>
     </PropertyGroup>
@@ -129,8 +129,8 @@
         <VerInfo_Locale>1041</VerInfo_Locale>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
-        <VerInfo_Keys>CompanyName=HIDE and Seek!;FileDescription=DAZN Live Schedule;FileVersion=1.0.0.901;InternalName=;LegalCopyright=ラグ太郎;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
-        <VerInfo_Build>901</VerInfo_Build>
+        <VerInfo_Keys>CompanyName=HIDE and Seek!;FileDescription=DAZN Live Schedule;FileVersion=1.0.0.904;InternalName=;LegalCopyright=ラグ太郎;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Build>904</VerInfo_Build>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppEnableHighDPI>true</AppEnableHighDPI>
     </PropertyGroup>
