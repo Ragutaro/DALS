@@ -147,7 +147,7 @@ end;
 procedure TfrmEditIcons.lvwIconsCustomDrawItem(Sender: TCustomListView;
   Item: TListItem; State: TCustomDrawState; var DefaultDraw: Boolean);
 begin
-  lvwIcons.SetHoverStyle(State, DefaultDraw);
+  lvwIcons.ColorizeLines(Item, State, DefaultDraw);
 end;
 
 procedure TfrmEditIcons.lvwIconsDblClick(Sender: TObject);
@@ -183,7 +183,7 @@ end;
 procedure TfrmEditIcons.lvwListCustomDrawItem(Sender: TCustomListView;
   Item: TListItem; State: TCustomDrawState; var DefaultDraw: Boolean);
 begin
-  lvwList.SetHoverStyle(State, DefaultDraw);
+  lvwList.ColorizeLines(Item, State, DefaultDraw);
 end;
 
 procedure TfrmEditIcons.lvwListMouseDown(Sender: TObject; Button: TMouseButton;
@@ -212,7 +212,7 @@ end;
 procedure TfrmEditIcons.lvwNewCustomDrawItem(Sender: TCustomListView;
   Item: TListItem; State: TCustomDrawState; var DefaultDraw: Boolean);
 begin
-  lvwNew.SetHoverStyle(State, DefaultDraw);
+  lvwNew.ColorizeLines(Item, State, DefaultDraw);
 end;
 
 procedure TfrmEditIcons.lvwNewDblClick(Sender: TObject);

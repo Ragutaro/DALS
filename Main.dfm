@@ -103,6 +103,8 @@ object frmMain: TfrmMain
       HotTrackStyles = [htHandPoint, htUnderlineHot]
       MultiSelect = True
       GroupView = True
+      ReadOnly = True
+      RowSelect = True
       ParentDoubleBuffered = False
       PopupMenu = popLVW
       SmallImages = pngListView
@@ -115,6 +117,9 @@ object frmMain: TfrmMain
       SortOrder = soAscending
       WrapAround = False
       DefaultSortOrder = soAscending
+      HoverColor = 16774117
+      HoverFontColor = clTeal
+      UnevenColor = 16710392
     end
   end
   object panInfo: TPanel

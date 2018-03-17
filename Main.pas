@@ -286,10 +286,9 @@ end;
 procedure TfrmMain.lvwListCustomDrawItem(Sender: TCustomListView;
   Item: TListItem; State: TCustomDrawState; var DefaultDraw: Boolean);
 begin
-  DefaultDraw := True;
   with lvwList.Canvas do
   begin
-    lvwList.SetListitemBackgroundColor(Item, $00FEFAF8, False, DefaultDraw);
+    lvwList.ColorizeLines(Item, State,DefaultDraw);
     Brush.Style := bsSolid;
     //放送中と視聴予約の背景を変更する
     Case Item.ImageIndex of
@@ -301,7 +300,6 @@ begin
         	Brush.Color := $00FAFAFA;
         end;
     end;
-    lvwList.SetHoverStyle(State, DefaultDraw);
   end;
 end;
 
@@ -623,7 +621,7 @@ end;
 procedure TfrmMain.tvwSportsCustomDrawItem(Sender: TCustomTreeView;
   Node: TTreeNode; State: TCustomDrawState; var DefaultDraw: Boolean);
 begin
-  tvwSports.SetHoverColor(State, DefaultDraw);
+  tvwSports.ColorizeNodes(Node, State, DefaultDraw);
 end;
 
 procedure TfrmMain.tvwSportsKeyUp(Sender: TObject; var Key: Word;

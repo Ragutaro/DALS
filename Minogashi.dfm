@@ -39,6 +39,7 @@ object frmMinogashi: TfrmMinogashi
       item
         Caption = #23455#27841#12539#35299#35500
       end>
+    HotTrackStyles = [htHandPoint, htUnderlineHot]
     GroupHeaderImages = frmMain.pngTreeView
     GroupView = True
     ReadOnly = True
@@ -51,6 +52,9 @@ object frmMinogashi: TfrmMinogashi
     SortOrder = soAscending
     WrapAround = False
     DefaultSortOrder = soAscending
+    HoverColor = 16774117
+    HoverFontColor = clTeal
+    UnevenColor = 16710392
   end
   object SpTBXDock: TSpTBXDock
     Left = 0

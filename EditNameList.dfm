@@ -39,6 +39,7 @@ object frmEditNameList: TfrmEditNameList
         Width = 200
       end>
     HideSelection = False
+    HotTrackStyles = [htHandPoint, htUnderlineHot]
     MultiSelect = True
     ReadOnly = True
     RowSelect = True
@@ -51,6 +52,9 @@ object frmEditNameList: TfrmEditNameList
     SortOrder = soAscending
     WrapAround = False
     DefaultSortOrder = soAscending
+    HoverColor = 16774117
+    HoverFontColor = clTeal
+    UnevenColor = 16710392
   end
   object btnOK: TButton
     Left = 346

@@ -129,8 +129,8 @@
         <VerInfo_Locale>1041</VerInfo_Locale>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
-        <VerInfo_Keys>CompanyName=HIDE and Seek!;FileDescription=DAZN Live Schedule;FileVersion=1.0.0.904;InternalName=;LegalCopyright=ラグ太郎;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
-        <VerInfo_Build>904</VerInfo_Build>
+        <VerInfo_Keys>CompanyName=HIDE and Seek!;FileDescription=DAZN Live Schedule;FileVersion=1.0.0.919;InternalName=;LegalCopyright=ラグ太郎;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Build>919</VerInfo_Build>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppEnableHighDPI>true</AppEnableHighDPI>
     </PropertyGroup>

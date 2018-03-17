@@ -99,7 +99,6 @@ object frmOption: TfrmOption
     Caption = 'OK'
     TabOrder = 7
     OnClick = btnOKClick
-    ExplicitTop = 360
   end
   object btnCancel: TButton
     Left = 200
@@ -110,7 +109,6 @@ object frmOption: TfrmOption
     Caption = #12461#12515#12531#12475#12523
     TabOrder = 8
     OnClick = btnCancelClick
-    ExplicitTop = 360
   end
   object GroupBox2: TGroupBox
     Left = 6
@@ -203,6 +201,7 @@ object frmOption: TfrmOption
     Top = 225
     Width = 222
     Height = 26
+    Hint = #20837#21147#21487#33021':0123456789:;'
     ParentShowHint = False
     ShowHint = True
     TabOrder = 2

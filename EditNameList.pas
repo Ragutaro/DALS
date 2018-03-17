@@ -124,18 +124,7 @@ end;
 procedure TfrmEditNameList.lvwListCustomDrawItem(Sender: TCustomListView;
   Item: TListItem; State: TCustomDrawState; var DefaultDraw: Boolean);
 begin
-  DefaultDraw := True;
-  lvwList.SetListitemBackgroundColor(Item, $00FEFAF8, False, DefaultDraw);
-  with lvwList.Canvas do
-  begin
-    if cdsHot in State then
-    begin
-      Brush.Color := clHover;
-      Brush.Style := bsSolid;
-      Font.Style  := [fsUnderline];
-      Font.Color  := clRed;
-    end;
-  end;
+  lvwList.ColorizeLines(Item, State, DefaultDraw);
 end;
 
 procedure TfrmEditNameList.lvwListDblClick(Sender: TObject);

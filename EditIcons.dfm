@@ -65,8 +65,10 @@ object frmEditIcons: TfrmEditIcons
             Caption = #38542#23652
           end>
         HideSelection = False
+        HotTrackStyles = [htHandPoint, htUnderlineHot]
         MultiSelect = True
         ReadOnly = True
+        RowSelect = True
         PopupMenu = popTVW
         SmallImages = frmMain.pngTreeView
         TabOrder = 0
@@ -78,6 +80,9 @@ object frmEditIcons: TfrmEditIcons
         SortOrder = soAscending
         WrapAround = False
         DefaultSortOrder = soAscending
+        HoverColor = 16774117
+        HoverFontColor = clRed
+        UnevenColor = 16710392
       end
       object Panel1: TPanel
         Left = 195
@@ -101,8 +106,10 @@ object frmEditIcons: TfrmEditIcons
           Align = alTop
           Anchors = [akLeft, akTop, akRight, akBottom]
           Columns = <>
+          HotTrackStyles = [htHandPoint, htUnderlineHot]
           LargeImages = frmMain.pngTreeView
           ReadOnly = True
+          RowSelect = True
           PopupMenu = popLVW
           TabOrder = 0
           OnCustomDrawItem = lvwIconsCustomDrawItem
@@ -110,6 +117,9 @@ object frmEditIcons: TfrmEditIcons
           SortOrder = soAscending
           WrapAround = False
           DefaultSortOrder = soAscending
+          HoverColor = 16774117
+          HoverFontColor = clTeal
+          UnevenColor = 16710392
         end
         object btnEditCancel: TButton
           Left = 394
@@ -185,8 +195,10 @@ object frmEditIcons: TfrmEditIcons
         Align = alTop
         Anchors = [akLeft, akTop, akRight, akBottom]
         Columns = <>
+        HotTrackStyles = [htHandPoint, htUnderlineHot]
         LargeImages = frmMain.pngTreeView
         ReadOnly = True
+        RowSelect = True
         PopupMenu = popLVW
         TabOrder = 0
         OnCustomDrawItem = lvwNewCustomDrawItem
@@ -194,6 +206,9 @@ object frmEditIcons: TfrmEditIcons
         SortOrder = soAscending
         WrapAround = False
         DefaultSortOrder = soAscending
+        HoverColor = 16774117
+        HoverFontColor = clTeal
+        UnevenColor = 16710392
       end
       object btnNewCancel: TButton
         Left = 592
