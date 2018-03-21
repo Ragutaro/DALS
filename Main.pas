@@ -387,6 +387,8 @@ begin
     Application.CreateForm(TfrmNewName, frmNewName);
     frmNewName.edtCurrent.Text := n.Text;
     frmNewName.edtNew.Text := n.Text;
+    frmNewName.ClientHeight := 160;
+    frmNewName.edtNew.SelectAll;
     frmNewName.Show;
   end;
 end;
@@ -434,17 +436,17 @@ begin
   popSetFavorite.FontSettings.Name := Self.Font.Name;
   popSyncTime.FontSettings.Name := Self.Font.Name;
 
-  popSetFavorite.Enabled := True;
-  popRename.Enabled := True;
-  popReload.Enabled := True;
-  popSyncTime.Enabled := True;
-  popSetIcon.Enabled := True;
+  popSetFavorite.Visible := True;
+  popRename.Visible := True;
+  popReload.Visible := True;
+  popSyncTime.Visible := True;
+  popSetIcon.Visible := True;
   Case tvwSports.Selected.ImageIndex of
     0 : //DAZN
       begin
-        popSetFavorite.Enabled := False;
-        popRename.Enabled := False;
-        popSetIcon.Enabled := False;
+        popSetFavorite.Visible := False;
+        popRename.Visible := False;
+        popSetIcon.Visible := False;
       end;
   end;
 end;

@@ -12,28 +12,29 @@ uses
 
 type
   TfrmOption = class(TForm)
-    GroupBox1: TGroupBox;
-    chkEnableSNTP: TCheckBox;
-    Label1: TLabel;
-    edtSNTP: TEdit;
     btnOK: TButton;
     btnCancel: TButton;
+    Panel1: TPanel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    GroupBox1: TGroupBox;
+    Label1: TLabel;
+    chkEnableSNTP: TCheckBox;
+    edtSNTP: TEdit;
     GroupBox2: TGroupBox;
-    cmbFont: TSpTBXFontComboBox;
     Label2: TLabel;
     Label3: TLabel;
+    cmbFont: TSpTBXFontComboBox;
     edtFontSize: TEdit;
-    Label4: TLabel;
     edtTimeout: TEdit;
-    Label5: TLabel;
-    OpenDialog: TOpenDialog;
     edtSound: TButtonedEdit;
-    Label6: TLabel;
     edtInform: TEdit;
-    Label7: TLabel;
     edtDelTime: TEdit;
-    Label8: TLabel;
     edtGetData: THideEditW;
+    OpenDialog: TOpenDialog;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure btnCancelClick(Sender: TObject);
@@ -89,6 +90,7 @@ procedure TfrmOption.FormCreate(Sender: TObject);
 begin
   DisableVclStyles(Self, '');
   _LoadSettings;
+  Self.ClientHeight := 447;
 end;
 
 procedure TfrmOption.FormKeyDown(Sender: TObject; var Key: Word;

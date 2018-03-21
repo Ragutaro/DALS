@@ -126,18 +126,7 @@ end;
 procedure TfrmMinogashi.lvwListCustomDrawItem(Sender: TCustomListView;
   Item: TListItem; State: TCustomDrawState; var DefaultDraw: Boolean);
 begin
-  DefaultDraw := True;
-  with lvwList.Canvas do
-  begin
-    Brush.Style := bsSolid;
-    if cdsHot in State then
-    begin
-      Brush.Style := bsSolid;
-      Brush.Color := clHover;
-      Font.Style  := [fsUnderline];
-      Font.Color  := clRed;
-    end;
-  end;
+  lvwList.SetHoverStyle(State, DefaultDraw);
 end;
 
 procedure TfrmMinogashi._LoadMinogashi(const sSubStr: String);

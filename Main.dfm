@@ -58,6 +58,8 @@ object frmMain: TfrmMain
       OnClick = tvwSportsClick
       OnCustomDrawItem = tvwSportsCustomDrawItem
       OnKeyUp = tvwSportsKeyUp
+      HoverColor = 16774117
+      HoverFontColor = clTeal
       ExplicitWidth = 105
       ExplicitHeight = 280
     end
@@ -98,7 +100,7 @@ object frmMain: TfrmMain
           Caption = #23455#27841#65381#35299#35500
           Width = 100
         end>
-      DoubleBuffered = False
+      DoubleBuffered = True
       HideSelection = False
       HotTrackStyles = [htHandPoint, htUnderlineHot]
       MultiSelect = True
@@ -114,12 +116,13 @@ object frmMain: TfrmMain
       OnCustomDrawItem = lvwListCustomDrawItem
       OnCreateItemClass = lvwListCreateItemClass
       OnDblClick = lvwListDblClick
-      SortOrder = soAscending
-      WrapAround = False
       DefaultSortOrder = soAscending
+      EvenColor = clWindow
       HoverColor = 16774117
       HoverFontColor = clTeal
+      SortOrder = soAscending
       UnevenColor = 16710392
+      WrapAround = False
     end
   end
   object panInfo: TPanel

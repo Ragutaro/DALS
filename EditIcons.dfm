@@ -25,7 +25,7 @@ object frmEditIcons: TfrmEditIcons
     Top = 0
     Width = 678
     Height = 264
-    ActivePage = tabEdit
+    ActivePage = tabNew
     Align = alClient
     TabOrder = 0
     ExplicitWidth = 382
@@ -81,7 +81,7 @@ object frmEditIcons: TfrmEditIcons
         WrapAround = False
         DefaultSortOrder = soAscending
         HoverColor = 16774117
-        HoverFontColor = clRed
+        HoverFontColor = clTeal
         UnevenColor = 16710392
       end
       object Panel1: TPanel

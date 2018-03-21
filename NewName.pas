@@ -11,13 +11,13 @@ uses
 
 type
   TfrmNewName = class(TForm)
+    btnOK: TButton;
+    btnCancel: TButton;
+    Panel1: TPanel;
     Label1: TLabel;
     Label2: TLabel;
     edtNew: TEdit;
     edtCurrent: TEdit;
-    btnOK: TButton;
-    btnCancel: TButton;
-    Shape1: TShape;
     StaticText1: TStaticText;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormCreate(Sender: TObject);
