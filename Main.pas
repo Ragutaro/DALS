@@ -577,11 +577,11 @@ begin
   panInfo.Visible := False;
   Application.ProcessMessages;
   if panInfo.Caption = '番組表を表示中...' then
-    MessageDlg('DAZNから反応がありません。しばらく時間をおいてから再度取得して下さい。',
-               '番組表取得失敗', mtWarning, [mbOK])
+    ShowMessage('DAZNから反応がありません。しばらく時間をおいてから再度取得して下さい。',
+               mtWarning, '番組表取得失敗')
   else if panInfo.Caption = '番組表を作成中...' then
-    MessageDlg('番組表の作成に失敗しました。しばらく時間をおいてから再度取得して下さい。',
-               '番組表取得失敗', mtWarning, [mbOK]);
+    ShowMessage('番組表の作成に失敗しました。しばらく時間をおいてから再度取得して下さい。',
+               mtWarning, '番組表取得失敗');
 end;
 
 procedure TfrmMain.timOnAirTimer(Sender: TObject);
@@ -737,7 +737,7 @@ begin
       sm.Free;
     end;
   except
-    MessageDlg('Error : _CheckIsOnAir', '', mtWarning, [mbOK]);
+    ShowMessage('Error : _CheckIsOnAir', mtWarning);
   end;
 end;
 
@@ -940,7 +940,7 @@ begin
       ini.Free;
     end;
   except
-    MessageDlg('Error : _CreateTimeTable', '', mtWarning, [mbOK]);
+    ShowMessage('Error : _CreateTimeTable', mtWarning);
   end;
 end;
 
@@ -1073,7 +1073,7 @@ begin
       tvwSports.Items.EndUpdate;
     end;
   except
-    MessageDlg('Error : _CreateTreeView', '', mtWarning, [mbOK]);
+    ShowMessage('Error : _CreateTreeView', mtWarning);
   end;
 end;
 
@@ -1199,7 +1199,7 @@ begin
       end;
     end;
   except
-    MessageDlg('Error : _LoadFromFile', '', mtWarning, [mbOK]);
+    ShowMessage('Error : _LoadFromFile', mtWarning);
   end;
 end;
 
@@ -1239,7 +1239,7 @@ begin
       sm.Free;
     end;
   except
-    MessageDlg('Error : _LoadCheckList', '', mtWarning, [mbOK]);
+    ShowMessage('Error : _LoadCheckList', mtWarning);
   end;
 end;
 
@@ -1508,7 +1508,7 @@ begin
       sm.Free;
     end;
   except
-    MessageDlg('Error : _SaveTreeViewStatus', '', mtWarning, [mbOK]);
+    ShowMessage('Error : _SaveTreeViewStatus', mtWarning);
   end;
 end;
 
@@ -1696,9 +1696,9 @@ begin
       end;
     end
     else
-      MessageDlg('時刻の同期が出来ませんでした。', '', mtWarning, [mbOK]);
+      ShowMessage('時刻の同期が出来ませんでした。', mtWarning);
   except
-    MessageDlg('Error : _SyncTime', '', mtWarning, [mbOK]);
+    ShowMessage('Error : _SyncTime', mtWarning);
   end;
 end;
 

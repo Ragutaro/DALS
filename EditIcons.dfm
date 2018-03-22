@@ -77,12 +77,13 @@ object frmEditIcons: TfrmEditIcons
         OnColumnClick = lvwListColumnClick
         OnCustomDrawItem = lvwListCustomDrawItem
         OnMouseDown = lvwListMouseDown
-        SortOrder = soAscending
-        WrapAround = False
         DefaultSortOrder = soAscending
+        EvenColor = clWindow
         HoverColor = 16774117
         HoverFontColor = clTeal
+        SortOrder = soAscending
         UnevenColor = 16710392
+        WrapAround = False
       end
       object Panel1: TPanel
         Left = 195
@@ -114,12 +115,13 @@ object frmEditIcons: TfrmEditIcons
           TabOrder = 0
           OnCustomDrawItem = lvwIconsCustomDrawItem
           OnDblClick = lvwIconsDblClick
-          SortOrder = soAscending
-          WrapAround = False
           DefaultSortOrder = soAscending
+          EvenColor = clWindow
           HoverColor = 16774117
           HoverFontColor = clTeal
+          SortOrder = soAscending
           UnevenColor = 16710392
+          WrapAround = False
         end
         object btnEditCancel: TButton
           Left = 394
@@ -157,6 +159,7 @@ object frmEditIcons: TfrmEditIcons
           #12473#12509#12540#12484#31278#30446'(=1)'
           #22823#20250#21517'(=2)'
           #12481#12540#12512#21517'(=3)')
+        ItemWidth = 0
       end
     end
     object tabNew: TTabSheet
@@ -203,12 +206,13 @@ object frmEditIcons: TfrmEditIcons
         TabOrder = 0
         OnCustomDrawItem = lvwNewCustomDrawItem
         OnDblClick = lvwNewDblClick
-        SortOrder = soAscending
-        WrapAround = False
         DefaultSortOrder = soAscending
+        EvenColor = clWindow
         HoverColor = 16774117
         HoverFontColor = clTeal
+        SortOrder = soAscending
         UnevenColor = 16710392
+        WrapAround = False
       end
       object btnNewCancel: TButton
         Left = 592

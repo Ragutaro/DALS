@@ -222,7 +222,7 @@ end;
 
 procedure TfrmEditIcons.popDeleteClick(Sender: TObject);
 begin
-  if MessageDlg('削除します。よろしいですか?', '削除の確認', mtConfirmation, [mbYes, mbNo]) = mrYes then
+  if MessageDlg('削除します。よろしいですか?', mtConfirmation, '削除の確認') = mrYes then
     lvwList.DeleteAllSelectedItems;
 end;
 
